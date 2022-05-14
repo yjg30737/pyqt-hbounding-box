@@ -59,6 +59,6 @@ https://user-images.githubusercontent.com/55078043/147186296-fa9083d0-67c6-4d7e-
 
 ## See Also
 
-<a href="https://github.com/yjg30737/pyqt-vertical-selection-square-graphics-view.git">pyqt-vertical-selection-square-graphics-view</a>
+<a href="https://github.com/yjg30737/pyqt-vbounding-box.git">pyqt-vbounding-box</a>
 
 
