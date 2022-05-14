@@ -14,11 +14,13 @@ PyQt5 >= 5.8
 
 ## Example
 Code Sample
+
 ```python
 from PyQt5.QtWidgets import QWidget, QGridLayout, QApplication, QPushButton, QFileDialog
 
-from pyqt_horizontal_selection_square_graphics_view.horizontalSelectionSquareGraphicsView import \
-    HorizontalSelectionSquareGraphicsView
+from pyqt_hbounding_box.hboundingBox import
+
+HorizontalSelectionSquareGraphicsView
 
 
 class HorizontalSelectionSquareGraphicsViewExample(QWidget):

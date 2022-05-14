@@ -2,10 +2,10 @@ from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QPixmap
 from PyQt5.QtWidgets import QGraphicsView, QGraphicsScene, QGraphicsItem
 
-from pyqt_horizontal_selection_square_graphics_view.selectionSquare import SelectionSquare
+from pyqt_hbounding_box.item import SelectionSquare
 
 
-class HorizontalSelectionSquareGraphicsView(QGraphicsView):
+class HBoundingBox(QGraphicsView):
     def __init__(self):
         super().__init__()
         self.__initUi()
@@ -18,7 +18,7 @@ class HorizontalSelectionSquareGraphicsView(QGraphicsView):
 
     def mousePressEvent(self, e):
         if self.__sq and e.button() == Qt.LeftButton:
-            if isinstance(self.__sq, SelectionSquare):
+            if isinstance(self.__sq, Item):
                 scene_rect = self.__sq.sceneBoundingRect()
                 scene_pos = self.mapToScene(e.pos())
                 if scene_rect.contains(scene_pos):
@@ -63,7 +63,7 @@ class HorizontalSelectionSquareGraphicsView(QGraphicsView):
         self.fitInView(self.__graphicItem, Qt.KeepAspectRatio)
         self.show()
 
-        self.__sq = SelectionSquare(view=self)
+        self.__sq = Item(view=self)
         self.__sq.setRect(self.sceneRect())
         self.scene().addItem(self.__sq)
 
