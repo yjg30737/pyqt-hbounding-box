@@ -2,7 +2,7 @@ from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QPixmap
 from PyQt5.QtWidgets import QGraphicsView, QGraphicsScene, QGraphicsItem
 
-from pyqt_hbounding_box.item import SelectionSquare
+from pyqt_hbounding_box.item import Item
 
 
 class HBoundingBox(QGraphicsView):

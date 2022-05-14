@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/pyqt_horizontal_selection_square.iml" filepath="$PROJECT_DIR$/.idea/pyqt_horizontal_selection_square.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/pyqt_hbounding_box.iml" filepath="$PROJECT_DIR$/.idea/pyqt_hbounding_box.iml" />
     </modules>
   </component>
 </project>
