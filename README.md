@@ -1,5 +1,5 @@
 # pyqt-hbounding-box
-PyQt QGraphicsView with selection box. User can move vertical border of the box horizontally.
+PyQt QGraphicsView with bounding box. User can move vertical border of the box horizontally.
 
 ## Requirements
 PyQt5 >= 5.8
@@ -18,12 +18,10 @@ Code Sample
 ```python
 from PyQt5.QtWidgets import QWidget, QGridLayout, QApplication, QPushButton, QFileDialog
 
-from pyqt_hbounding_box.hboundingBox import
-
-HorizontalSelectionSquareGraphicsView
+from pyqt_hbounding_box.hboundingBox import HBoundingBox
 
 
-class HorizontalSelectionSquareGraphicsViewExample(QWidget):
+class HBoundingBoxExample(QWidget):
     def __init__(self):
         super().__init__()
         self.__initUi()
@@ -50,7 +48,7 @@ if __name__ == "__main__":
     import sys
 
     app = QApplication(sys.argv)
-    ex = HorizontalSelectionSquareGraphicsViewExample()
+    ex = HBoundingBoxExample()
     ex.show()
     sys.exit(app.exec_())
 ```
