@@ -29,7 +29,7 @@ class HBoundingBoxExample(QWidget):
     def __initUi(self):
         addImageBtn = QPushButton('Add image')
         addImageBtn.clicked.connect(self.__addImage)
-        self.__view = HorizontalSelectionSquareGraphicsView()
+        self.__view = HBoundingBox()
 
         lay = QGridLayout()
         lay.addWidget(addImageBtn)
