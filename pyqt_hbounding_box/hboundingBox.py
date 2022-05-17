@@ -17,6 +17,7 @@ class HBoundingBox(QGraphicsView):
         self.__sq = 0
         self.__pathItem = 0
         self.__pressed = False
+        self.__darker = False
 
     def mousePressEvent(self, e):
         if self.__sq and e.button() == Qt.LeftButton:
@@ -58,7 +59,8 @@ class HBoundingBox(QGraphicsView):
     def __setPixmap(self, p):
         self.__p = p
         self.__scene = QGraphicsScene()
-        self.__scene.installEventFilter(self)
+        if self.__darker:
+            self.__scene.installEventFilter(self)
 
         self.__graphicItem = self.__scene.addPixmap(self.__p)
         self.setScene(self.__scene)
@@ -92,6 +94,9 @@ class HBoundingBox(QGraphicsView):
         if self.__pathItem:
             self.scene().removeItem(self.__pathItem)
         self.__pathItem = self.scene().addPath(self.__path, p, b)
+
+    def setDarkerOutOfBox(self, f: bool):
+        self.__darker = f
 
     def eventFilter(self, obj, e):
         if e.type() == 156:
