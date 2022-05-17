@@ -1,9 +1,10 @@
 from PyQt5.QtGui import QPen
 from PyQt5.QtWidgets import QGraphicsRectItem, QGraphicsItem
-from PyQt5.QtCore import Qt
+from PyQt5.QtCore import Qt, QEvent, pyqtSignal
 
 
 class Item(QGraphicsRectItem):
+
     def __init__(self, view, parent=None):
         super().__init__(parent)
         self.__initUi(view)
