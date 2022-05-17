@@ -11,7 +11,7 @@ PyQt5 >= 5.8
 * Being able to drag and drop vertical border horizontally
 * Pressing mouse cursor to place more adjacent border on the spot.
 * Right click to release the focus of the box
-* Out of the box being darker when moving the box to make selection area conspicuous (above 0.0.12, i will upload that example later)
+* You can set the background out of the box darker with `setDarkerOutOfBox(f: bool)`.
 
 ## Example
 Code Sample
